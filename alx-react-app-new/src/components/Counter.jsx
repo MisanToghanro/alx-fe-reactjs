@@ -5,15 +5,15 @@ function Counter() {
 
     const[count , setCount] = useState(0);
     
-const increase = () => {
+const Increment = () => {
     setCount(count + 1);
 }
 
-const reset = () => {
+const Reset = () => {
     setCount(0);
 }
 
-const decrease = () => {
+const Decrement = () => {
     setCount(count - 1);
 }
 
@@ -21,9 +21,9 @@ const decrease = () => {
     return(
         <div>
             <p>{count}</p>
-            <button onClick={increase}>increment</button>
-            <button onClick={reset}>reset</button>
-            <button onClick={decrease}>decrement</button>
+            <button onClick={Increment}>Increment</button>
+            <button onClick={Reset}>Reset</button>
+            <button onClick={Decrement}>Decrement</button>
         </div>
     );
 }
