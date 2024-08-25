@@ -1,16 +1,16 @@
-import useRecipeStore from "../store/RecipeStore";
+import useRecipeStore from "./recipestore";
 
 const DeleteRecipeButton = ({recipeId}) => {
 
     const deleteRecipe = useRecipeStore(state => state.deleteRecipe);
 
-    const handleDelete = () => {
+    const useNavigate = () => {
         deleteRecipe(recipeId);
     };
 
 
 return(
-    <button onClick={handleDelete}>Delete recipe</button>
+    <button onClick={useNavigate}>Delete recipe</button>
 )
 
 }

@@ -1,4 +1,4 @@
-import useRecipeStore from "../store/RecipeStore";
+import useRecipeStore from "./recipestore";
 import EditRecipeForm from "./EditRecipeForm";
 import DeleteRecipeButton from "./DeleteRecipeButton";
 import { useParams } from "react-router-dom";
