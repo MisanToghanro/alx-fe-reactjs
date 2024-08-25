@@ -1,6 +1,6 @@
 import useRecipeStore from "./recipestore";
 
- const SearchBar = () => {
+ export const SearchBar = () => {
   
     const setSearchTerm = useRecipeStore(state=> state.state);
 
