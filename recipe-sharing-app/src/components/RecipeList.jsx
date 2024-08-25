@@ -1,6 +1,6 @@
 
   // RecipeList component
-import useRecipeStore from "../store/RecipeStore";
+  import useRecipeStore from "./recipestore";
 import { NavLink } from "react-router-dom";
 import { SearchBar } from "./SearchBar";
 import React from 'react'
