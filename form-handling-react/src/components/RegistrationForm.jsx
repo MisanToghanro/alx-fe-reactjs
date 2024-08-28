@@ -14,12 +14,13 @@ const handleSubmit = (e) => {
         formErrors.username = "username is required"
     }
 
-    if(!password){
-        formErrors.password = "password is required"
-    }
    
     if(!email){
         formErrors.email = "email is required"
+    }
+
+    if(!password){
+        formErrors.password = "password is required"
     }
 
     setErrors(formErrors);
