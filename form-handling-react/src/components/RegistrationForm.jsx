@@ -10,18 +10,21 @@ const handleSubmit = (e) => {
     e.preventDefault();
     let formErrors ={}
 
-    if(!username){
-        formErrors.username = "username is required"
-    }
-
-   
-    if(!email){
-        formErrors.email = "email is required"
-    }
-
-    if(!password){
-        formErrors.password = "password is required"
-    }
+    // Validate username
+    if (!username) {
+        formErrors.username = 'Username is required';
+      }
+  
+      // Validate email
+      if (!email) {
+        formErrors.email = 'Email is required';
+      }
+  
+      // Validate password
+      if (!password) {
+        formErrors.password = 'Password is required';
+      }
+  
 
     setErrors(formErrors);
 
