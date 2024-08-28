@@ -4,16 +4,11 @@ import * as Yup from "yup";
 const FormikForm = () => {
 
  const validationSchema = Yup.object({
-    username: Yup.string()
-    .required("username is required"),
+    username: Yup.string().required("username is required"),
 
-    email: Yup.string()
-    .required("email is required")
-    .email("invalid email address"),
+    email: Yup.string().required("email is required").email("invalid email address"),
 
-    password: Yup.string()
-    .required("passwrod is required")
-    .min("password must be at least 6 characters long")
+    password: Yup.string().required("passwrod is required").min("password must be at least 6 characters long")
     
  })
 
