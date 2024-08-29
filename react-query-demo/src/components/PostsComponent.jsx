@@ -14,7 +14,11 @@ const fetchPosts = async() =>{
 const PostComponent = () => {
     const {data , isLoading , error, isError , refetch} = useQuery({
         queryKey:["post"],
-         queryFn: fetchPosts
+         queryFn: fetchPosts,
+         cacheTime: 300000, // 5 minutes
+            staleTime: 60000,  // 1 minute
+            refetchOnWindowFocus: false, // Disable refetch on window focus
+            keepPreviousData: true, // Keep previous data while fetching new data
     });
 
     if(isLoading){
