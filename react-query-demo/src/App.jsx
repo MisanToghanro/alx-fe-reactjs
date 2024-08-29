@@ -1,5 +1,5 @@
 import {QueryClientProvider , QueryClient} from "@tanstack/react-query";
-import PostComponent from "./PostsComponent";
+import PostComponent from "./components/PostsComponent";
 
 
 function App() {
