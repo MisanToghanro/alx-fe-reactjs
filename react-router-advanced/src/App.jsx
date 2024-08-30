@@ -1,5 +1,5 @@
 import Profile from "./components/Profile";
-import { Routes , Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes , Route} from "react-router-dom";
 import Home from "./components/Home"
 import NavBar from "./components/NavBar";
 import ProfileDetails from "./components/ProfileDetails";
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-   
+   <Router>
    <NavBar/>
     <Routes>
     <Route path="/" element={<Home/>}/>
@@ -25,11 +25,12 @@ function App() {
     <Route path="profileDetails" element={<ProfileDetails/>}/>
     <Route path="profileSettings" element={<ProfileSettings/>}/>
     </Route>
-    <Route path="/blog/:postId" element={<BlogPost/>} />
+
+    <Route path="/blogpost" element={<BlogPost />} /> 
 
     </Route>
     </Routes>
-   
+    </Router>
     </>
   )
 }
