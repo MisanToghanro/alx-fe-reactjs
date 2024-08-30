@@ -18,12 +18,12 @@ function App() {
    <NavBar/>
     <Routes>
     <Route path="/" element={<Home/>}/>
-    <Route path="login" element={<LoginPage/>}/>
+    <Route path="/login" element={<LoginPage/>}/>
 
     <Route element= {<ProtectedRoute/>}>
-    <Route path="profile" element={<Profile/>}>
-    <Route path="profileDetails" element={<ProfileDetails/>}/>
-    <Route path="profileSettings" element={<ProfileSettings/>}/>
+    <Route path="/profile" element={<Profile/>}>
+    <Route path="/profileDetails" element={<ProfileDetails/>}/>
+    <Route path="/profileSettings" element={<ProfileSettings/>}/>
     </Route>
 
     {/*<Route path="/blogpost" element={<BlogPost />} /> */}
