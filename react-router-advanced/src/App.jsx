@@ -26,7 +26,8 @@ function App() {
     <Route path="profileSettings" element={<ProfileSettings/>}/>
     </Route>
 
-    <Route path="/blogpost" element={<BlogPost />} /> 
+    {/*<Route path="/blogpost" element={<BlogPost />} /> */}
+    <Route path="/blog/:postId" element={<BlogPost />} />
 
     </Route>
     </Routes>
