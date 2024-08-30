@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import ProfileDetails from "./components/ProfileDetails";
 import ProfileSettings from "./components/ProfileSettings";
 import BlogPost from "./components/BlogPost";
-import ProtectedRoute from "./components/ProctectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute";
 import LoginPage from "./components/Login";
 
 
