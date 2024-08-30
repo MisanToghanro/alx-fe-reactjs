@@ -13,7 +13,7 @@ function App() {
  
 
   return (
-    <>
+   
    <Router>
    <NavBar/>
     <Routes>
@@ -31,7 +31,7 @@ function App() {
     </Route>
     </Routes>
     </Router>
-    </>
+   
   )
 }
 

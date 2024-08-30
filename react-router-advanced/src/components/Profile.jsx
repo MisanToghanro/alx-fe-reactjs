@@ -1,5 +1,7 @@
 
-
+import { Routes, Route } from 'react-router-dom';
+import ProfileDetails from './ProfileDetails';
+import ProfileSettings from './ProfileSettings';
 import { NavLink , Outlet} from 'react-router-dom';
 
  const Profile = () => {
@@ -7,11 +9,15 @@ import { NavLink , Outlet} from 'react-router-dom';
 return(
     <>
     <h1>Profile Page</h1>
-    <nav>
+    <Routes>
+        <Route path="details" element={<ProfileDetails />} />
+        <Route path="settings" element={<ProfileSettings />} />
+      </Routes>
+   {/* <nav>
     <NavLink to="ProfileDetails">Profile Details</NavLink>
     <NavLink to="ProfileSettings">Profile Settings</NavLink>
     </nav>
-<Outlet/>
+<Outlet/>*/}
     </>
 )
 }
