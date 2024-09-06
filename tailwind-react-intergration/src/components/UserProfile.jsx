@@ -1,5 +1,5 @@
 
-function UserProfile() {
+const UserProfile=()=> {
     return (
       <div className="user-profile   md:bg-gray-100 md:p-8 md:max-w-sm md:mx-auto,my-20 rounded-lg shadow-lg 
       hover:md:shadow-xl
