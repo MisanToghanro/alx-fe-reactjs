@@ -2,7 +2,7 @@
 const UserProfile=()=> {
     return (
       <div className="user-profile   md:bg-gray-100 md:p-8 md:max-w-sm md:mx-auto,my-20 rounded-lg shadow-lg 
-      hover:md:shadow-xl
+      hover:shadow-xl
       
       sm:p-4 sm:max-w-xs
      sm:bg-white-500
@@ -17,7 +17,7 @@ const UserProfile=()=> {
 
         <h1 className="h1  md:text-blue-800 md:my-4
         md:text-xl sm:text-green-600 sm:text-lg
-         hover:md:text-green-500
+         hover:md:text-blue-500
 " >John Doe</h1>
 
         <p className="p md:text-gray-600 text-base
