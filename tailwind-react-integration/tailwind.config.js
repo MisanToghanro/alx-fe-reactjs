@@ -13,6 +13,7 @@ darkMode:false,
       }
     },
   },
+  variants:{extend:{}},
   plugins: [],
 }
 

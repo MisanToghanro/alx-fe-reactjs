@@ -17,7 +17,7 @@ const UserProfile=()=> {
 
         <h1 className="h1  md:text-blue-800 md:my-4
         md:text-xl sm:text-green-600 sm:text-lg
-         hover:md:text-blue-500
+         hover:text-blue-500
 " >John Doe</h1>
 
         <p className="p md:text-gray-600 text-base
