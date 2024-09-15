@@ -15,7 +15,7 @@ const HomePage = () => {
                 Recipe Sharing Platform
             </h1>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid-cols-2 sm:grid-cols-1 md:grid-cols-3 gap-6">
                 {recipes.map((recipe) => (
                     <Link to={`/recipe/${recipe.id}`} key={recipe.id}>
                         <div className="rounded-lg p-4 shadow-md hover:shadow-blue-500 mb-4 transition-transform hover:scale-105 cursor-pointer">

@@ -4,13 +4,13 @@ const AddRecipeForm =  () => {
 const [form , setForm] = useState({
   title:"",
   ingredients:"",
-  instructions:""
+  steps:""
 });
  
 
 const handleInput = (e) => {
   setForm({
-    ...setForm,
+    ...form,
     [e.target.name]: e.target.value
   })
 };
@@ -23,7 +23,7 @@ const handleSubmit = (e) => {
   setForm({
     title:"",
   ingredients:"",
-  instructions:""
+  steps:""
   })
 }
 
@@ -55,8 +55,8 @@ const handleSubmit = (e) => {
        />
 
       <textarea 
-            name="instructions"
-            value={form.instrutions}
+            name="steps"
+            value={form.steps}
             onChange={handleInput}
        placeholder="cooking instructions"
         className="border p-2 mb-2"
@@ -65,6 +65,8 @@ const handleSubmit = (e) => {
 
 <button type="submit" className="bg-blue-500 text-white rounded hover:bg-blue-600 py-2 px-2">add recipe</button>
     </form>
+
+
     </div>
   )
 }
