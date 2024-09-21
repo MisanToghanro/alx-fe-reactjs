@@ -19,7 +19,7 @@ const handleSearch  = async (e) => {
 const data = await fetchUserData(username , location, minirepos);
 setUserData(data)
   }catch(error) {
-    setError(error.message)
+    setError("Looks like we cant find the user")
   }finally {
     setLoading(false);  // Stop loading after API call completes
   }
@@ -74,7 +74,7 @@ setUserData(data)
           <button type="submit" className=" rounded-sm bg-blue-500 hover:bg-blue-600 px-6 py-2  w-64 transition duration-300 ml-4 text-white">search user</button>
         </form>
         {loading && <p className="text-blue-500">Loading...</p>}
-        
+
         {error && <p className="text-red-500  ">{error}</p>}
        
         {userData && 

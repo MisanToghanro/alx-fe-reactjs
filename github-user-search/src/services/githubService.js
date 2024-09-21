@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const fetchUserData =  async (username , location , minirepos) => {
+const fetchUserData =  async (username , location , minrepos) => {
  let query = `q=${username}`
 
  if(location){
     query += `+locaton:${location}`
  }
  if (minirepos){
-    query += `+minirepos:${minirepos}`
+    query += `+minrepos:${minirepos}`
  }
    try {
         const response = await axios
