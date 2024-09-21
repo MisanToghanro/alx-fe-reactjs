@@ -11,12 +11,19 @@ const fetchUserData =  async (username , location , minirepos) => {
  }
    try {
         const response = await axios
-            .get(`https://api.github.com/search/users?${query}`);
+            .get(`https://api.github.com/search/users?${query}`,
+             {
+                headers: {
+                    Authorization: `token ${process.env.REACT_APP_GITHUB_API_KEY}`,
+                  },
+                }
+            );
+           
         return response.data.items;
     } catch (error) {
-        throw new Error('User not found');
+        throw new Error("Looks like we cant find the user");
     }
     
-}
+};
 export default fetchUserData;
 
